@@ -12,8 +12,16 @@ export const Contact = () => {
       <div className="bg-black p-[1px] rounded-[12px]"> 
         <Button 
           variant="contained" 
-          className="bg-red rounded-[12px] text-black relative left-[-2px] top-[-2px] " 
-          sx={{ border: '1px solid black' }}
+          sx={{ 
+            backgroundColor: '#FF6B6B',
+            color: 'black',
+            borderRadius: '12px',
+            border: '1px solid black',
+            transform: 'translate(-2px, -2px)',
+            '&:hover': {
+              backgroundColor: '#FF6B6B',
+            }
+          }}
           href="mailto:besabeteng@gmail.com"
         >
           Contact me

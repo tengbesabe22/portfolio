@@ -38,9 +38,19 @@ export const Banner = () => {
             <a href="/Lester Besabe - CV.pdf" download>
               <Button 
                 variant="contained" 
-                className="bg-yellow rounded-[12px] text-black relative left-[-2px] top-[-2px] " 
+                // className="bg-teng-yellow rounded-[12px] text-black relative left-[-2px] top-[-2px] " 
                 endIcon={<Download />}
-                sx={{ border: '1px solid black' }}
+                // sx={{ border: '1px solid black' }}
+                sx={{ 
+                  backgroundColor: '#F5CC44', // red-500 equivalent
+                  color: 'black',
+                  borderRadius: '12px',
+                  border: '1px solid black',
+                  transform: 'translate(-2px, -2px)',
+                  '&:hover': {
+                    backgroundColor: '#F5CC44', // red-600 for hover
+                  }
+                }}
               >
                 Download CV
               </Button>
